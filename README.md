@@ -1,16 +1,85 @@
-# React + Vite
+# 🎬 CineVerse Movie Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive Movie Website built using React.js.
 
-Currently, two official plugins are available:
+This website allows users to browse movies, search for movies, and view movie details.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎯 About The Project
 
-## React Compiler
+CineVerse is a Movie Website created to practice React.js.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The project uses the TMDB API to get movie information and display it on the website.
 
-## Expanding the ESLint configuration
+Users can browse different types of movies, search for movies, and view details about a selected movie.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- Browse movies
+- Browse popular movies
+- Browse top-rated movies
+- Browse upcoming movies
+- Search movies
+- View movie details
+- View movie rating
+- View movie genres
+- View movie runtime
+- View release date
+- View IMDb link
+- Responsive design
+- Mobile-friendly navigation
+- Smooth hover effects
+- Custom 404 page
+
+## 🛠️ Technologies Used
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- React Router
+- React Icons
+- TMDB API
+- Vite
+- Git & GitHub
+
+## ⚙️ What I Practiced
+
+- React components
+- React Hooks
+- useState
+- useEffect
+- React Router
+- API fetching
+- Search functionality
+- Movie details
+- Reusable components
+- Responsive CSS
+- Mobile navigation
+
+## 📈 Learning Outcomes
+
+- Learned how to create React components
+- Practiced using React Hooks
+- Learned how to use useState
+- Learned how to use useEffect
+- Learned how to use APIs in React
+- Practiced React Router
+- Learned how to create search functionality
+- Learned how to display dynamic movie data
+- Improved CSS and responsive design skills
+- Learned how to create reusable components
+- Built a complete Movie Website using React.js
+
+## 🌐 Live Demo
+
+Check out the live application here:
+
+🔗 [CineVerse Live Demo](https://cineverse-movie-app-kohl.vercel.app/)
+
+## 👨‍💻 Author
+
+**Hariharan S**
+
+Frontend Developer
+
+Skills: React.js | JavaScript | HTML | CSS
