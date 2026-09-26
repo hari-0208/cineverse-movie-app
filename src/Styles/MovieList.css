@@ -1,0 +1,171 @@
+/* Welcome Container */
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.welcome-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 50px 35px;
+  text-align: center;
+  background: var(--navbar-bg);
+  border-radius: 15px;
+  border: 1px solid #333;
+  animation: fadeup 0.6s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.welcome-container:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--banner-shd);
+}
+
+/* Welcome Heading */
+
+.welcome-container h3 {
+  margin-bottom: 20px;
+  color: var(--active-link);
+  font-size: 28px;
+  animation: fadeUp 0.7s ease;
+}
+
+/* Welcome Paragraph */
+
+.welcome-container p {
+  margin-bottom: 30px;
+  color: var(--normal-link);
+  font-size: 16px;
+  line-height: 1.8;
+  animation: fadeUp 0.8s ease;
+}
+
+/* FadeUp Animations */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button */
+
+button {
+  background: var(--active-link);
+  color: var(--navbar-bg);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+button:hover {
+  background: var(--active-hover);
+  transform: translateY(-3px);
+}
+
+/* Movie List Title */
+
+.movie-list-title {
+  margin: 30px 0;
+  padding-bottom: 12px;
+  color: var(--title);
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 2px solid var(--title);
+  animation: slideRight 0.6s ease;
+}
+
+/* SlideRight Animation */
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Movies Card */
+
+.movies-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+  animation: fadeUp 0.7s ease;
+}
+
+/* Tablet Screen */
+
+@media screen and (max-width: 992px) {
+  .movies-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small Tablet */
+
+@media screen and (max-width: 768px) {
+  .movies-card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .movie-list-title {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 92%;
+    padding-top: 120px;
+  }
+
+  .welcome-container {
+    padding: 35px 20px;
+  }
+
+  .welcome-container h3 {
+    font-size: 25px;
+  }
+
+  .welcome-container p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  button {
+    padding: 11px 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .movies-card {
+    grid-template-columns: 1fr;
+  }
+
+  .movie-list-title {
+    font-size: 19px;
+  }
+}

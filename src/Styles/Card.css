@@ -1,0 +1,195 @@
+/* Card Container */
+
+.card-container {
+  width: 100%;
+}
+
+.card {
+  height: 100%;
+  overflow: hidden;
+  background: var(--navbar-bg);
+  border: var(--border);
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--banner-shd);
+}
+
+/* Card Poster */
+
+.card-poster {
+  width: 100%;
+  height: 450px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-poster {
+  transform: scale(1.05);
+}
+
+/* Card Informations */
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  min-height: 170px;
+  padding: 15px;
+  color: var(--white);
+}
+
+/* Title */
+
+.card-title {
+  margin-bottom: 10px;
+  color: var(--active-link);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Overflow */
+
+.card-text {
+  margin-bottom: 15px;
+  color: var(--normal-link);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Text Overflow */
+
+.text-overflow-1 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.text-overflow-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+/* Card Footer */
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+/* Read More Btn */
+
+.read-more-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  color: var(--title);
+  border: var(--border);
+  border-radius: 5px;
+  font-size: 13px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.card:hover .read-more-btn {
+  background: var(--title);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Card Reviews */
+
+.card-review {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.rating,
+.review {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--normal-link);
+}
+
+.rating svg {
+  color: var(--active-link);
+  font-size: 13px;
+}
+
+.review svg {
+  color: var(--title);
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1400px) {
+  .read-more-btn {
+    font-size: 13px;
+    padding: 8px 10px;
+    text-align: center;
+  }
+}
+
+/* Medium Screen & Tablet */
+
+@media screen and (max-width: 768px) {
+  .card-poster {
+    height: 350px;
+  }
+
+  .card-info {
+    padding: 12px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .read-more-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .movie-info {
+    font-size: 10px;
+    gap: 8px;
+  }
+}
+
+/* Mobile  Screen */
+
+@media screen and (max-width: 480px) {
+  .card-poster {
+    height: 300px;
+  }
+
+  .card-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .read-more-btn {
+    font-size: 11px;
+  }
+
+  .movie-info {
+    font-size: 12px;
+  }
+}
